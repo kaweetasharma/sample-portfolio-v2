@@ -1,0 +1,87 @@
+# Dependency directories
+node_modules/
+.pnp/
+.pnp.js
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment Variables
+.env
+.env.*.local
+
+# Editor directories and files
+.vscode/
+.idea/
+*.sublime-workspace
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Build directories
+dist/
+build/
+out/
+.cache/
+
+# Parcel files
+.cache/
+.parcel-cache/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Testing
+coverage/
+*.lcov
+
+# Next.js
+.next/
+
+# Nuxt.js
+.nuxt/
+dist/
+
+# Svelte
+.svelte-kit/
+
+# Gatsby files
+.cache/
+public/
+
+# VS Code extensions
+.vscode/extensions.json
+
+# Mac-specific
+*.swp
+
+# Temporary files
+*.tmp
+*.temp
+
+# Yarn or npm lock files (choose one if you're not using both)
+yarn.lock
+package-lock.json
+
+# IDE specific settings
+*.swp
+*.idea
+.vscode/
+*.code-workspace
+
+# npm
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Exclude .env files but keep a sample for development
+!.env.example
+
+# Miscellaneous
+*.bak

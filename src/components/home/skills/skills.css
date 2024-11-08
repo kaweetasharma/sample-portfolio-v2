@@ -1,0 +1,101 @@
+.skills {
+  background-image: var(--third-gradient);
+  padding: 5rem 2rem;
+}
+
+.skills__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.skills__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 3rem;
+}
+
+.skills__item {
+  background: var(--bg-color-alt);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills__item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.skills__titles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.skills__name {
+  font-size: var(--h4-font-size);
+  font-weight: 600;
+  color: var(--title-color);
+}
+
+.skills__number {
+  color: var(--primary-color);
+  font-weight: 700;
+  font-size: var(--normal-font-size);
+}
+
+.skills__description {
+  font-size: var(--small-font-size);
+  color: var(--text-color);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.skills__bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.skills__percentage {
+  height: 100%;
+  background-color: var(--primary-color);
+  position: relative;
+  transition: width 1s ease-in-out;
+}
+
+.skills__indicator {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: var(--container-color);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow);
+  position: absolute;
+  right: 0;
+  top: -50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.skills__percentage:hover .skills__indicator {
+  transform: translateY(-50%) scale(1.1);
+  box-shadow: 0 0 10px var(--primary-color);
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  .skills__titles {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skills__number {
+    margin-top: 0.5rem;
+  }
+}
