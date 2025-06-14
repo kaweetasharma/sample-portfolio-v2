@@ -2,7 +2,9 @@
 
 This is a sample portfolio project built with React and Vite. It is designed to
 showcase my work as a Frontend Developer, with a focus on animations, modern web
-development techniques, and a minimalist design.
+development techniques, and a minimalist design. The latest update adds
+framer-motion powered transitions and a refreshed color palette for a more
+polished look.
 
 # Key Features
 
