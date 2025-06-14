@@ -13,11 +13,11 @@ const Home = () => {
               Hello, <span> My Name is </span>
             </p>
 
-            <h1 className="home__title text_cs">
+            <h1 className="home__title text-cs">
               <span>KAVITA</span> SHARMA
             </h1>
             <p className="home__job">
-              <span className="text_cs">I AM</span> <b>Web Developer</b>
+              <span className="text-cs">I AM</span> <b>Web Developer</b>
             </p>
 
             <p className="home__text">
