@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import profileImg from '../../assets/profile-img.png';
 import './home.css';
 import { FaTwitter, FaDribbble, FaBehance } from 'react-icons/fa';
@@ -8,7 +9,12 @@ const Home = () => {
     <section className="home" id="home">
       <div className="home__wrapper">
         <div className="home__container container">
-          <div className="home__text-content">
+          <motion.div
+            className="home__text-content"
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
             <p className="home__subtitle text-cs">
               Hello, <span> My Name is </span>
             </p>
@@ -61,9 +67,14 @@ const Home = () => {
                 <FaBehance />
               </a>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="home__img-wrapper">
+          <motion.div
+            className="home__img-wrapper"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
             <div className="home__banner">
               <img
                 src={profileImg}
@@ -89,7 +100,7 @@ const Home = () => {
                 </span>
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
