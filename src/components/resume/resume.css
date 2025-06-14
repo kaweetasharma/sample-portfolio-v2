@@ -56,6 +56,10 @@
   transition: all 1.2s var(--transition);
 }
 
+.is-open .resume__icon {
+  transform: rotate(45deg);
+}
+
 .resume__content {
   padding-inline: 30px 50px;
   max-height: 0;
@@ -86,4 +90,14 @@
 
 .resume__description {
   margin-block: 20px 30px;
+}
+
+@media screen and (max-width: 768px) {
+  .resume__container {
+    grid-template-columns: 1fr;
+  }
+
+  .resume__item:not(:first-child) {
+    border-right: none;
+  }
 }

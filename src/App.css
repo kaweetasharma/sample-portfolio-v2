@@ -10,13 +10,13 @@
   /**
     *colors
     */
-  --primary-color: hsl(165, 60%, 40%);
+  --primary-color: hsl(262, 80%, 60%);
   --title-color: hsl(0, 0%, 100%);
-  --text-color: hsl(0, 0%, 92%);
-  --bg-color: hsl(216, 18%, 16%);
-  --bg-color-alt: hsl(213, 10%, 21%);
-  --container-color: hsl(217, 18%, 14%);
-  --border-color: hsl(210, 2%, 65%);
+  --text-color: hsl(0, 0%, 90%);
+  --bg-color: hsl(222, 28%, 12%);
+  --bg-color-alt: hsl(222, 23%, 18%);
+  --container-color: hsl(222, 26%, 10%);
+  --border-color: hsl(220, 3%, 50%);
   --first-gradient: linear-gradient(
     0deg,
     var(--bg-color-alt) 0%,
