@@ -4,7 +4,7 @@ const Card = (props) => {
   const [showInfo, setShowInfo] = useState(false);
 
   return (
-    <div className="resume__item">
+    <div className={`resume__item ${showInfo ? 'is-open' : ''}`}>
       <div className="resume__header" onClick={() => setShowInfo(!showInfo)}>
         <h3 className="resume__subtitle">{props.title}</h3>
         <span className="resume__icon">{showInfo ? '-' : '+'}</span>
