@@ -13,7 +13,7 @@ const Card = (props) => {
       <div className={`${showInfo ? 'show-content' : ''} resume__content`}>
         <div className="resume__date-title">
           <h3 className="resume__title">{props.subtitle}</h3>
-          <spam className="resume__date text-cs">{props.date}</spam>
+          <span className="resume__date text-cs">{props.date}</span>
         </div>
 
         <p className="resume__description">{props.description}</p>
